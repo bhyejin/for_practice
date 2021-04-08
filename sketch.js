@@ -1,12 +1,12 @@
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(windowWidth, windowHeight);
   stroke(1);
 }
 
 function draw() {
   background(255);
-  for (let b1 = mouseX; b1 <= 500; b1 += 80) {
-    for (let b2 = mouseY; b2 <= 500; b2 += 80) {
+  for (let b1 = mouseX; b1 <= windowWidth; b1 += 80) {
+    for (let b2 = mouseY; b2 <= windowHeight; b2 += 80) {
       ellipse(mouseX, mouseY, b1, b2);
       fill(b1, b2, b2, 30);
     }
